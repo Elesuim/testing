@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAI Incorporated</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: #f4fcff;
+        }
+        .split {
+            height: 100%;
+            position: fixed;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .left {
+            width: 5%;
+            left: 0;
+            background-color: #95e5ff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .left img {
+            width: 40px;
+            margin: 20px 0;
+        }
+        .right {
+            width: 95%;
+            right: 0;
+            padding: 20px;
+        }
+        .centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .search-box {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #012c39;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            transition: 0.4s;
+        }
+        .search-box:hover .search-txt {
+            width: 560px;
+            padding: 0 6px;
+        }
+        .search-box:hover .search-btn {
+            background: white;
+        }
+        .search-btn {
+            color: #00c0ff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #2f364;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+            font-size: 16px;
+            width: 0px;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="split left">
+        <a href="pals23.html"><img src="images/image1.jpg" alt="Avatar"></a>
+        <a href="pals23.html"><img src="images/image2.jpg" alt="Avatar"></a>
+    </div>
+    
+    <!-- Right Content -->
+    <div class="split right">
+        <div class="centered">
+            <img src="images/FUB.jpg" alt="Company Logo" width="200">
+            <h1>Welcome to GAI Incorporated</h1>
+            <h2>About Us</h2>
+            <p>GAI is dedicated to stopping global warming through the use of renewable energy sources.</p>
+            <h2>Our Goals</h2>
+            <p>We aim for a green, carbon-free world by promoting sustainable energy solutions.</p>
+            <h2>Products</h2>
+            <p>We sell solar panels, mini wind turbines, and educational books on sustainability.</p>
+        </div>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-box">
+        <input class="search-txt" type="text" placeholder="Search...">
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+</body>
+</html>
